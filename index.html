@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080000">
+<title>VAIPERX PANEL</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    background: #080000;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+
+.panel {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    line-height: 0;
+}
+
+.panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ปุ่มโปร่งใสทับบนภาพ */
+.link {
+    position: absolute;
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+/* เอฟเฟกต์เมื่อแตะ */
+.link:active {
+    background: rgba(255, 0, 0, 0.12);
+    box-shadow: inset 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.link:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* 1. ยืนยันคีย์ */
+.key {
+    left: 19.7%;
+    top: 41.0%;
+    width: 63.7%;
+    height: 8.6%;
+}
+
+/* 2. ดาวน์โหลด IOS */
+.ios {
+    left: 6.6%;
+    top: 58.1%;
+    width: 43.8%;
+    height: 7.8%;
+}
+
+/* 3. ดาวน์โหลด Android */
+.android {
+    left: 52.5%;
+    top: 58.1%;
+    width: 43.8%;
+    height: 7.8%;
+}
+
+/* 4. คลิปสอน */
+.tutorial {
+    left: 15.0%;
+    top: 67.8%;
+    width: 73.0%;
+    height: 7.5%;
+}
+
+/* มือถือ */
+@media (max-width: 600px) {
+    .panel {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="panel">
+
+    <!-- รูปหลัก VAIPERX -->
+    <img
+        src="https://i.postimg.cc/Pxmy3tYk/25A72A73-12D9-4302-BF63-A45FED8E8D67.png"
+        alt="VAIPERX PANEL"
+    >
+
+    <!-- ปุ่มยืนยันคีย์ -->
+    <a
+        class="link key"
+        href="https://panel.rezzxtools.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ยืนยันคีย์"
+        title="ยืนยันคีย์">
+    </a>
+
+    <!-- ปุ่มดาวน์โหลด IOS -->
+    <a
+        class="link ios"
+        href="https://apps.apple.com/th/app/happ-proxy-utility/id6504287215?l=th"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ดาวน์โหลดแอป iOS"
+        title="ดาวน์โหลด iOS">
+    </a>
+
+    <!-- ปุ่มดาวน์โหลด Android -->
+    <a
+        class="link android"
+        href="https://www.mediafire.com/file/r4b9qa30tjzx8b6/Happ+Vpn+Phantom+Webmode"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ดาวน์โหลดแอป Android"
+        title="ดาวน์โหลด Android">
+    </a>
+
+    <!-- ปุ่มคลิปสอน -->
+    <a
+        class="link tutorial"
+        href="https://youtu.be/KjCkpYQml5s?si=KlERFGP55hK-8o7Q"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ดูคลิปสอนติดตั้งและใช้งาน"
+        title="คลิปสอน">
+    </a>
+
+</div>
+
+</body>
+</html>
